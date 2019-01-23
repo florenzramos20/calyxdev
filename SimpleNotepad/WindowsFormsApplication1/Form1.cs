@@ -33,9 +33,10 @@ namespace WindowsFormsApplication1
         private void btnNew_Click(object sender, EventArgs e)
         {
             textBox1.Text = "";
+            isOpen = false;
 
         }
-
+        bool isOpen = false;
         private void btnOpen_Click(object sender, EventArgs e)
         {
       
@@ -47,14 +48,37 @@ namespace WindowsFormsApplication1
                 string[] lines = File.ReadAllLines(theDialog.FileName.ToString());
                 textBox1.Lines = lines;
                 lblNumLines.Text = "Line:" + lines.Count();
+                isOpen = true;
             }
         }
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            File.WriteAllText(theDialog.FileName.ToString(), String.Empty);
-            string[] linesfromText = textBox1.Text.Split('\n');
-            File.WriteAllLines(theDialog.FileName.ToString(), linesfromText);
+
+
+            if (isOpen)
+            {
+                File.WriteAllText(theDialog.FileName.ToString(), String.Empty);
+                string[] linesfromText = textBox1.Text.Split('\n');
+                File.WriteAllLines(theDialog.FileName.ToString(), linesfromText);
+            }
+            else
+            {
+                SaveFileDialog saveFileDialog1 = new SaveFileDialog();
+
+                saveFileDialog1.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*";
+                saveFileDialog1.InitialDirectory = @"C:\";
+
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    string[] contents = textBox1.Text.ToString().Split('\n');
+                    File.WriteAllLines(saveFileDialog1.FileName.ToString(), contents);
+                }
+            }
+            
+
+
+           
 
         }
 
