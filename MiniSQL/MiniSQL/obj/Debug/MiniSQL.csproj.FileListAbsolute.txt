@@ -1,0 +1,8 @@
+C:\Users\Gilbert Adane\Desktop\FLO\MiniSQL\MiniSQL\bin\Debug\MiniSQL.exe
+C:\Users\Gilbert Adane\Desktop\FLO\MiniSQL\MiniSQL\bin\Debug\MiniSQL.pdb
+C:\Users\Gilbert Adane\Desktop\FLO\MiniSQL\MiniSQL\obj\Debug\MiniSQL.csprojResolveAssemblyReference.cache
+C:\Users\Gilbert Adane\Desktop\FLO\MiniSQL\MiniSQL\obj\Debug\MiniSQL.Form1.resources
+C:\Users\Gilbert Adane\Desktop\FLO\MiniSQL\MiniSQL\obj\Debug\MiniSQL.Properties.Resources.resources
+C:\Users\Gilbert Adane\Desktop\FLO\MiniSQL\MiniSQL\obj\Debug\MiniSQL.csproj.GenerateResource.Cache
+C:\Users\Gilbert Adane\Desktop\FLO\MiniSQL\MiniSQL\obj\Debug\MiniSQL.exe
+C:\Users\Gilbert Adane\Desktop\FLO\MiniSQL\MiniSQL\obj\Debug\MiniSQL.pdb
